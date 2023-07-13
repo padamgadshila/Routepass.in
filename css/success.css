@@ -1,0 +1,81 @@
+@font-face {
+    font-family: unique;
+    src: url('./Font/UnifySans.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: unique;
+    transition: all .4s;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --border-: #707070;
+    --bg-: #1f1d1d;
+    --bl-: #0088ff;
+    --txt-: #ffffff;
+    --btn-: #00B16A;
+    --btn-hover-: #5a5adb;
+    --foot-: #16275e;
+    --radius-: 5px;
+    --shadow-: 0px 0px 2px rgb(24, 24, 24);
+    --center-: translate(-50%, -50%);
+}
+
+.payment {
+    margin: 10% 0 0 10%;
+}
+
+.payment button {
+    width: 200px;
+    height: 50px;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--txt-);
+    background: var(--btn-);
+    border-radius: var(--radius-);
+    border: none;
+}
+
+.payment button:hover {
+    background: var(--btn-hover-);
+}
+
+.message {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: var(--center-);
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 5px;
+    background: rgb(83, 220, 83);
+}
+
+.animation {
+    top: 50%;
+}
+
+.message i {
+    padding: 20px 25px;
+    border-radius: 50%;
+    border: 3px solid green;
+    font-size: 60px;
+    margin: 30px 0;
+    color: green;
+}
+
+.message h2 {
+    color: green;
+}

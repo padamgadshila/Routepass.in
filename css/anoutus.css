@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'unique';
+    src: url(./Font/UnifySans.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'unique';
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .4s;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --border-: #707070;
+    --bg-: #1f1d1d;
+    --bl-: #0088ff;
+    --txt-: #ffffff;
+    --btn-: #00B16A;
+    --btn-hover-: #5a5adb;
+    --foot-: #16275e;
+    --radius-: 5px;
+    --shadow-: 0px 0px 2px rgb(24, 24, 24);
+    --center-: translate(-50%, -50%);
+}
+
+.banner img {
+    margin-top: 80px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+/* container */
+.info-title {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.info-title h1 k {
+    color: orangered;
+}
+
+.info-title hr {
+    margin: auto;
+    width: 10%;
+    border: 2px solid #ff0023;
+}
+
+/* pranit */
+
+#info-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#info-1 img {
+    width: 70%;
+}
+
+#info-1 img:hover {
+    width: 72%;
+    transition: width .4s;
+}
+
+.info {
+    width: 64%;
+    padding: 7% 2%;
+    text-align: left;
+}
+
+.info h3 {
+    padding-bottom: 2%;
+    font-size: medium;
+}
+
+.info h2 {
+    font-size: 30px;
+}
+
+.info h4 {
+    padding-bottom: 1%;
+}
+
+.info hr {
+    margin-top: 5%;
+    border: 2px solid rgb(0, 81, 255);
+    width: 50%;
+
+}
+
+/* padam */
+
+#info-2 {
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    margin: 0% 2%;
+}
+
+#info-2 img {
+    width: 39%;
+    margin-left: 50%;
+}
+
+
+#info-2 img:hover {
+    width: 40%;
+    transition: width .4s;
+}
+
+
+
+.info1 {
+    width: 150rem;
+    padding: 7% 2%;
+    text-align: left;
+}
+
+.info1 h3 {
+    padding-bottom: 2%;
+    font-size: medium;
+}
+
+.info1 h2 {
+    font-size: 30px;
+}
+
+.info1 h4 {
+    padding-bottom: 1%;
+}
+
+
+.info1 hr {
+    margin-top: 5%;
+    border: 2px solid rgb(0, 81, 255);
+    width: 50%;
+
+}
+
+
+.about-com-image img {
+    display: flex;
+    margin: auto;
+}
+
+
+.company h1 {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.company h1 k {
+    color: orangered;
+}
+
+.company hr {
+    margin: auto;
+    width: 10%;
+    border: 2px solid red;
+}
+
+.about-com-info {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 3%;
+
+}
+
+@media(max-width:400px) {
+    .info-title h1 {
+        padding: 3% 0%;
+    }
+
+    .info-title hr {
+        width: 40%;
+    }
+
+    #info-2 {
+        flex-wrap: wrap-reverse;
+    }
+
+    .info {
+        width: 100%;
+        padding: 7% 2%;
+        text-align: center;
+    }
+
+    .info hr {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .info1 hr {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    #info-1 img:hover {
+        width: 377px;
+        transition: width .4s;
+    }
+
+    #info-1 img {
+        height: 377px;
+        width: 377px;
+    }
+
+    #info-2 img:hover {
+        width: 365px;
+        transition: width .4s;
+    }
+
+    #info-2 img {
+        height: 365px;
+        width: 365px;
+        object-fit: contain;
+        margin-left: 0%;
+    }
+
+    .info1 {
+        width: 100%;
+        padding: 7% 2%;
+        text-align: center;
+    }
+
+
+    .about-com-image img {
+        width: 80%;
+    }
+}

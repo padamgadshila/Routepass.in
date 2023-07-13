@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'unique';
+    src: url(./Font/UnifySans.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'unique';
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .4s;
+}
+
+:root {
+    --border-: #707070;
+    --bg-: #1f1d1d;
+    --bl-: #0088ff;
+    --txt-: #ffffff;
+    --btn-: #00B16A;
+    --btn-hover-: #5a5adb;
+    --foot-: #16275e;
+    --radius-: 5px;
+    --shadow-: 0px 0px 2px rgb(24, 24, 24);
+    --center-: translate(-50%, -50%);
+}
+
+.form-container,
+.pass-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: var(--center-);
+    width: 35%;
+    background: var(--txt-);
+    padding: 30px;
+    border-radius: var(--radius-);
+    box-shadow: var(--shadow-);
+}
+
+.form-container {
+    height: 310px;
+}
+
+.pass-container {
+    height: 370px;
+}
+
+.form-container h2,
+.pass-container {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.input {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-);
+    border-radius: var(--radius-);
+    padding-left: 35px;
+    font-size: 16px;
+}
+
+.input input:focus,
+.input input:valid {
+    border: 2px solid var(--btn-);
+}
+
+.input i {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    font-size: 18px;
+    color: var(--border-);
+}
+
+.input input:focus~i,
+.input input:valid~i {
+    color: var(--btn-);
+    animation: rotate .7s linear;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.message {
+    display: none;
+    position: absolute;
+    bottom: -15px;
+    left: 12px;
+    margin: 5px 0;
+    color: red;
+    font-size: 14px;
+}
+
+.input button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: var(--center-);
+    background: var(--btn-);
+    color: var(--txt-);
+    font-size: 17px;
+    font-weight: bold;
+    width: 50%;
+    height: 80%;
+    border-radius: var(--radius-);
+}
+
+.input button:hover {
+    background-color: var(--btn-hover-);
+}
+
+.input a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: var(--center-);
+    color: var(--bl-);
+}
+
+.otp {
+    position: absolute;
+    top: -130px;
+    left: 43%;
+    width: 250px;
+    height: 50px;
+    border-radius: var(--radius-);
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    background: rgb(62, 204, 62);
+    color: black;
+    transition: all .4s;
+}
+
+.otp strong {
+    margin: auto;
+}
+
+.otp-pop {
+    top: 30px;
+}
+
+/* Responsive start */
+@media(max-width:1500px) {
+    .form-container {
+        width: 40%;
+    }
+
+    .otp {
+        left: 40%;
+    }
+}
+
+@media(max-width:1400px) {
+
+    .form-container,
+    .pass-container {
+        width: 43%;
+    }
+
+    .otp {
+        left: 40%;
+    }
+}
+
+@media(max-width:1300px) {
+
+    .form-container,
+    .pass-container {
+        width: 45%;
+    }
+
+    .otp {
+        left: 42%;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .form-container,
+    .pass-container {
+        width: 45%;
+    }
+
+    .otp {
+        left: 42%;
+    }
+}
+
+@media(max-width:1100px) {
+
+    .form-container,
+    .pass-container {
+        width: 40%;
+    }
+
+    .otp {
+        left: 42%;
+    }
+}
+
+@media(max-width:1000px) {
+
+    .form-container,
+    .pass-container {
+        width: 50%;
+    }
+
+    .otp {
+        left: 40%;
+    }
+}
+
+@media(max-width:900px) {
+    .otp {
+        left: 38%;
+    }
+}
+
+@media(max-width:800px) {
+
+    .form-container,
+    .pass-container {
+        width: 55%;
+    }
+
+    .otp {
+        left: 35%;
+    }
+}
+
+@media(max-width:700px) {
+
+    .form-container,
+    .pass-container {
+        width: 80%;
+    }
+
+    .otp {
+        left: 33%;
+    }
+}
+
+@media(max-width:600px) {
+
+    .form-container,
+    .pass-container {
+        width: 80%;
+    }
+
+    .otp {
+        left: 28%;
+    }
+}
+
+@media(max-width:500px) {
+
+    .form-container,
+    .pass-container {
+        top: 50%;
+        width: 100%;
+    }
+
+    .otp {
+        left: 90px;
+    }
+}
+
+@media(max-width:400px) {
+
+    .form-container,
+    .pass-container {
+        width: 100%;
+    }
+
+    .otp {
+        left: 50px;
+    }
+}
+
+/* Responsive end */

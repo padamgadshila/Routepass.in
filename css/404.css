@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'unique';
+    src: url(./Font/UnifySans.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'unique';
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .4s;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --border-: #707070;
+    --bg-: #1f1d1d;
+    --bl-: #0088ff;
+    --txt-: #ffffff;
+    --btn-: #00B16A;
+    --btn-hover-: #5a5adb;
+    --foot-: #16275e;
+    --radius-: 5px;
+    --shadow-: 0px 0px 2px rgb(24, 24, 24);
+    --center-: translate(-50%, -50%);
+}
+
+.error {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: var(--center-);
+}
+
+.error h1 {
+    font-size: 100px;
+}
+
+.error h2 {
+    font-size: 30px;
+}
+
+.error p {
+    font-size: 19px;
+}

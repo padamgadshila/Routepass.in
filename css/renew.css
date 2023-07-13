@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'unique';
+    src: url(./Font/UnifySans.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'unique';
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .4s;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --border-: #707070;
+    --bg-: #1f1d1d;
+    --bl-: #0088ff;
+    --txt-: #ffffff;
+    --btn-: #00B16A;
+    --btn-hover-: #5a5adb;
+    --foot-: #16275e;
+    --radius-: 5px;
+    --shadow-: 0px 0px 2px rgb(24, 24, 24);
+    --center-: translate(-50%, -50%);
+}
+
+
+/* Renew start */
+.renew {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(225, 225, 225, .2);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.renew-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-container {
+    width: 350px;
+    height: 250px;
+    border: 1px solid var(--border-);
+    border-radius: var(--radius-);
+    background: var(--txt-);
+    box-shadow: var(--shadow-);
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--border-);
+    border-radius: var(--radius-);
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.input input:focus,
+.input input:valid,
+.input select:focus,
+.input select:valid {
+    border: 2px solid var(--btn-);
+}
+
+.input select {
+    width: 100%;
+    height: 50px;
+    background: var(--txt-);
+    border: 1px solid var(--border-);
+    border-radius: var(--radius-);
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.btn-container {
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-container button {
+    height: 100%;
+    width: 80%;
+    border-radius: var(--radius-);
+    background: var(--btn-);
+    color: var(--txt-);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-container button:hover {
+    background: var(--btn-hover-);
+}
+
+/* Renew start */
