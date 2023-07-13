@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'unique';
+    src: url(./Font/UnifySans.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'unique';
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s;
+}
+
+:root {
+    --border-: #707070;
+    --bg-: #1f1d1d;
+    --bl-: #0088ff;
+    --txt-: #ffffff;
+    --btn-: #00B16A;
+    --btn-hover-: #5a5adb;
+    --foot-: #16275e;
+    --radius-: 5px;
+    --shadow-: 0px 0px 2px rgb(24, 24, 24);
+    --center-: translate(-50%, -50%);
+}
+
+
+/* Admin login start */
+.message {
+    color: red;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: var(--center-);
+    width: 40%;
+    height: auto;
+    background: var(--txt-);
+    padding: 30px;
+    border-radius: var(--radius-);
+    box-shadow: var(--shadow-);
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.input {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-);
+    border-radius: var(--radius-);
+    padding-left: 35px;
+    font-size: 16px;
+}
+
+.input input:focus,
+.input input:valid {
+    border: 2px solid var(--btn-);
+}
+
+.input i {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    font-size: 18px;
+    color: var(--border-);
+}
+
+.input input:focus~i,
+.input input:valid~i {
+    color: var(--btn-);
+    animation: rotate .7s linear;
+}
+
+.btn-container {
+    margin-top: 20px;
+    margin-left: 35%;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-container button {
+    height: 100%;
+    width: 40%;
+    border-radius: var(--radius-);
+    background: var(--btn-);
+    color: var(--txt-);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-container button:hover {
+    background: var(--btn-hover-);
+}
+
+/* Admin login end */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    display: flex;
+}
+
+.left {
+    flex-basis: 15%;
+    border: 1px solid blue;
+
+}
+
+.right {
+    flex-basis: 85%;
+    border: 1px solid blue;
+    overflow: hidden;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.btns li {
+    background: var(--btn-);
+    color: var(--txt-);
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: var(--radius-);
+}
+
+.btns li:hover {
+    background: var(--btn-hover-);
+}
+
+.btns li a {
+    color: var(--txt-);
+}
+
+img {
+    width: 100px;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.section:nth-child(1) {
+    display: block;
+}
+
+.section:nth-child(2) {
+    display: none;
+}
+
+.section:nth-child(3) {
+    display: none;
+}
+
+.section:nth-child(4) {
+    display: none;
+}
+
+.showPage {
+    display: block;
+}
+
+.pass {
+    overflow: scroll;
+}
+
+/* Table start */
+
+.table {
+    position: relative;
+    left: 30px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 17;
+    min-width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.table th {
+    background-color: #0080d5;
+    color: #fff;
+    /* text-align: left; */
+    font-weight: bold;
+    border-left: 1px solid #fff;
+}
+
+.table td {
+    border-left: 1px solid #ccc;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tr:hover {
+    /* font-weight: bold; */
+    /* color: #0080d5; */
+    background: #dcdada;
+}
+
+.table tr:nth-last-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tr:nth-last-of-type(even):hover {
+    background-color: #d3d2d2;
+}
+
+.table tr:last-of-type {
+    border-bottom: 2px solid #0080d5;
+}
+
+/* Table end */
+#edit,
+#edit2,
+#del,
+#del2 {
+    padding: 10px 20px;
+    border-radius: var(--radius-);
+    color: var(--txt-);
+    font-weight: bold;
+}
+
+#edit,
+#edit2 {
+    background: var(--btn-);
+}
+
+#del,
+#del2 {
+    background: red;
+}
+
+#edit:hover,
+#del:hover,
+#edit2:hover,
+#del2:hover {
+    background: var(--btn-hover-);
+}
+
+@media (max-width:400px) {
+    .form-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .input button {
+        width: 100%;
+        margin-left: -40px;
+    }
+}
